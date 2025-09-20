@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="POST">
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="username">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<input type="text">        <!-- One-line text -->
+<input type="email">       <!-- Email format -->
+<input type="password">    <!-- Hidden input -->
+<input type="number">      <!-- Only numbers -->
+<input type="date">        <!-- Date picker -->
+<input type="checkbox">    <!-- Tick box -->
+<input type="radio">       <!-- Select one option -->
+<input type="submit">      <!-- Submit button -->
+
+    <form action="/register" method="POST">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <br><br>
+
+  <label for="pass">Password:</label>
+  <input type="password" id="pass" name="password" required>
+
+  <br><br>
+
+  <label>Gender:</label>
+  <input type="radio" name="gender" value="Male"> Male
+  <input type="radio" name="gender" value="Female"> Female
+
+  <br><br>
+
+  <input type="submit" value="Register">
+</form>
+
+</body>
+</html>

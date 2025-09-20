@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <textarea name="message" rows="5" cols="30">Enter message here...</textarea>
+
+<select name="city">
+  <option value="delhi">Delhi</option>
+  <option value="mumbai">Mumbai</option>
+</select>
+<form action="/submit" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required minlength="4" maxlength="12">
+
+  <br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <br><br>
+
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="password" required pattern=".{6,}">
+
+  <br><br>
+
+  <input type="submit" value="Register">
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+  <input type="file" name="resume">
+  <input type="submit" value="Upload">
+</form>
+  
+</form>
+<audio controls>
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<video width="480" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube video player" frameborder="0"
+  allowfullscreen>
+</iframe>
+</body>
+</html>
